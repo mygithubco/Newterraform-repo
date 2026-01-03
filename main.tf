@@ -72,7 +72,7 @@ variable "server_count" {
 #########################################
 resource "aws_instance" "APP001-WEB" {
   count         = var.server_count
-  ami           = "ami-0b571a36bf02461b4" # Ubuntu 22.04 LTS
+  ami           = "ami-0c6ef28989b434b51" # Ubuntu 22.04 LTS
   instance_type = "t3.small"
 
   subnet_id              = data.aws_subnets.default.ids[0]
